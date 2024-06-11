@@ -10,7 +10,4 @@ async def async_comprehension() -> List:
     """
     Function that returns a list of random integers
     """
-    result = []
-    async for i in async_generator():
-        result.append(i)
-    return result
+    return [i async for  i in async_generator()]
